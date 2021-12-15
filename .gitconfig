@@ -1,2 +1,2 @@
 [alias]
-    cmp = "!f() { git add -A && git commit -m \"$@\" && git push --set-upstream; }; f"
+    cmp = "!f() { git add -A && git commit -m \"$@\" && git push -u; }; f"
