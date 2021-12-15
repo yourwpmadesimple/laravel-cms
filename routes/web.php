@@ -26,7 +26,7 @@ Route::get('/contact', function () {
 });
 
 Route::get(('/post/{id}/{name}'), function($id, $name) {
-    return "This is post number" . $id . "by " . $name;
+    return "This is post number " . $id . "by " . $name;
 });
 
 Route::get('admin/posts/example', array('as' => 'admin.home', function() {
