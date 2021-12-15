@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return "Hi I am About";
+    return "Hi I am About page";
 });
 
 Route::get('/contact', function () {
