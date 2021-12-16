@@ -48,6 +48,7 @@ class PostsController extends Controller
     public function show($id)
     {
         //
+        return "This is the show method " . $id; 
     }
 
     /**
@@ -82,5 +83,10 @@ class PostsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function contact(){
+        return view('contact');
     }
 }
