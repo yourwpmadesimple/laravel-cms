@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>Hello</h1>
+            <h1>Contact Page</h1>
         </div>
     </body>
 </html>
