@@ -88,6 +88,7 @@ class PostsController extends Controller
 
     public function contact(){
         $people = ['Wayne', 'Shelly', 'Ariana', 'Tyler'];
+        echo $_SERVER["DOCUMENT_ROOT"];
         return view('contact', compact('people'));
     }
 
