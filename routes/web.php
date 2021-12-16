@@ -41,3 +41,5 @@ Route::get('/', function () {
 Route::get('/contact', 'PostsController@contact');
 
 Route::get('post/{id}', 'PostsController@show_post');
+
+Route::get('/user', 'PostsController@user');

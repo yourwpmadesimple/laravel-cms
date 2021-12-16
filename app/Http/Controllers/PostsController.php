@@ -98,4 +98,8 @@ class PostsController extends Controller
     public function show_post($id) {
         return view('post', compact('id'));
     }
+
+    public function user() {
+        return view('user', ['name' => 'Shelly'] );
+    }
 }
