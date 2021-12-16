@@ -34,4 +34,6 @@ Route::get('/', function () {
 //  return "This url is " . $url;
 // }));
 
-Route::get('/post/{id}', 'PostsController@index');
+//Route::get('/post/{id}', 'PostsController@index');
+
+Route::resource('post', 'PostsController');
