@@ -36,4 +36,4 @@ Route::get('/', function () {
 
 //Route::get('/post/{id}', 'PostsController@index');
 
-Route::resource('post', 'PostsController');
+Route::resource('post', "PostsController");
