@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel - Views</title>
+@section('title') {{'Contact Page'}} @endsection
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Contact Page</h1>
-        </div>
-    </body>
-</html>
+@section('content')
+
+<h1>Contact Page</h1>
+
+@endsection
+
+@section('footer')
+
+<script>
+    console.log('You are on the contact page')
+</script>
+
+@endsection 
