@@ -14,9 +14,8 @@ class PostsController extends Controller
     public function index($id)
     {
         //
-        return "
-        <h1>Index Method for PostsController</h1>
-        <h3>And passing the #" . $id . "</h3>";
+        return "<h1>Index Method for PostsController</h1><h3>And passing the #". $id . "</h3>";
+         
     }
 
     /**
@@ -24,7 +23,7 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
         //
     }
