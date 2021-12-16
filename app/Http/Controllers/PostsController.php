@@ -91,8 +91,11 @@ class PostsController extends Controller
     }
 
 
-    public function show_post() {
-        $id = "Wayne";
-        return view('post')->with('id', $id);
+    // public function show_post() {
+    //     $id = "Wayne";
+    //     return view('post')->with('id', $id);
+    // }
+    public function show_post($id) {
+        return view('post', compact('id'));
     }
 }

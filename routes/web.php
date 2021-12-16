@@ -40,4 +40,4 @@ Route::get('/', function () {
 
 Route::get('/contact', 'PostsController@contact');
 
-Route::get('/post', 'PostsController@show_post');
+Route::get('post/{id}', 'PostsController@show_post');
