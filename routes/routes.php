@@ -20,10 +20,12 @@ Route::get('/', function () {
 
 /** Inserting Data to the Database **/
 
-Route::get('/insert', function() {
-    DB::insert('insert into posts(title, content) values(?, ?)', 
-        ["React JS", "The future of webdesign"],
-        ["PHP", "One of the best languages around"]
+Route::get('/create', function() {
+    DB::insert('insert into posts(title, content)
+    values
+        ("React JS", "A JavaScript library for building user interfaces"),
+        ("PHP", "PHP is a popular general-purpose scripting language that is especially suited to web development."),
+        ("Laravel", "Laravel is a web application framework with expressive, elegant syntax.")'
     );
 });
 
@@ -41,4 +43,10 @@ Route::get('/read', function(){
 Route::get('/update', function() {
     $update = DB::update('update posts set title = "Laravel" where id = ?', [1]);
     return $update;
+});
+
+/** Deleting Data from the Database **/
+Route::get('/delete', function() {
+    $delete = DB::delete('delete from posts where id > 0');
+    return $delete;
 });
