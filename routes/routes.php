@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,26 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/about', function () {
-//     return "Hi I am About page";
-// });
-
-// Route::get('/contact', function () {
-//     return "Hi I am contact";
-// });
-
-// Route::get(('/post/{id}/{name}'), function($id, $name) {
-//     return "This is post number " . $id . "by " . $name;
-// });
-
-// Route::get('admin/posts/example', array('as' => 'admin.home', function() {
-//  $url = route('admin.home');
-//  return "This url is " . $url;
-// }));
-
-//Route::get('/post/{id}', 'PostsController@index');
-
-// Route::resource('post', "PostsController");
+Route::get('/insert', function() {
+    DB::insert('insert into posts(title, content) values(?, ?)', ["Wayne", "Laravel is the best thing that has happened to PHP"]);
+});
 
 Route::get('/contact', 'PostsController@contact');
 
