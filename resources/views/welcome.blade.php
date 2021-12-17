@@ -60,7 +60,7 @@ body {
 
 </style>
        
-        <title>Laravel - SQL Queeries (Updating Data)</title>
+        <title>Laravel - SQL Queeries (Deleting Data)</title>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -80,7 +80,7 @@ body {
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel - SQL Queeries (Updating Data)
+                    Laravel - SQL Queeries (Deleting Data)
                 </div>
 
                 <div class="links">
