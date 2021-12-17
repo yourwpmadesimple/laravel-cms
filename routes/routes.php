@@ -36,3 +36,8 @@ Route::get('/read', function(){
         <p>$post->content</p>";
     }
 });
+/** Updating Data in the Database **/
+Route::get('/update', function() {
+    $update = DB::update('update posts set title = "Laravel" where id = ?', [1]);
+    return $update;
+});
