@@ -60,7 +60,7 @@ body {
 
 </style>
        
-        <title>Laravel - SQL Queeries (Inserting Data)</title>
+        <title>Laravel - SQL Queeries (Reading Data)</title>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -80,7 +80,7 @@ body {
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel - SQL Queeries (Inserting Data)
+                    Laravel - SQL Queeries (Reading Data)
                 </div>
 
                 <div class="links">

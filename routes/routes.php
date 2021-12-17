@@ -18,12 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/** Inserting Data to the Database **/
+
 Route::get('/insert', function() {
-    DB::insert('insert into posts(title, content) values(?, ?)', ["Wayne", "Laravel is the best thing that has happened to PHP"]);
+    DB::insert('insert into posts(title, content) values(?, ?)', 
+        ["React JS", "The future of webdesign"],
+        ["PHP", "One of the best languages around"]
+    );
 });
 
-Route::get('/contact', 'PostsController@contact');
-
-Route::get('post/{id}', 'PostsController@show_post');
-
-Route::get('/user', 'PostsController@user');
+/** Reading Data from the Database **/
+Route::get('/read', function(){
+    $results = DB::select('select * from posts where id > 0');
+    foreach($results as $post){
+        echo "<h1>$post->title</h1>
+        <hr/>
+        <p>$post->content</p>";
+    }
+});
