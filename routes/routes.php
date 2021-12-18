@@ -96,3 +96,10 @@ Route::get('eloquent/findwhere', function() {
     echo json_encode(json_decode($posts), JSON_PRETTY_PRINT);
     echo '</pre>';
 });
+
+Route::get('eloquent/findmore', function() {
+    $posts = Post::findOrFail(3);
+    echo '<pre>';
+    echo json_encode(json_decode($posts), JSON_PRETTY_PRINT);
+    echo '</pre>';
+});
