@@ -110,3 +110,16 @@ Route::get('eloquent/findmore', function() {
 //     echo json_encode(json_decode($posts), JSON_PRETTY_PRINT);
 //     echo '</pre>';
 // });
+
+/*
+|--------------------------------------------------------------------------
+|ELOQUENT - INSERTING AND SAVING DATA
+|--------------------------------------------------------------------------
+*/
+
+Route::get('eloquent/insert', function() {
+ $post = new Post;
+$post->title = "New Eloquent Title Insert";
+$post->content = "New Eloquent Content Insert";
+$post->save();
+});
