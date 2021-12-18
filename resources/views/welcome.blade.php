@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <style>
@@ -58,9 +58,29 @@ body {
     margin-bottom: 30px;
 }
 
+/* Width */
+::-webkit-scrollbar{
+    width:0.8vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    background-color: #c9c9c9
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background-color: #ff003f;
+    border-radius: 15px;
+}
+
+/* */
+
+
+
 </style>
-       
-        <title>Laravel - Eloquent (More ways of retrieving Data)</title>
+
+        <title>Laravel - Eloquent (Inserting and Saving Data)</title>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -80,7 +100,7 @@ body {
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel - Eloquent (More ways of retrieving Data)
+                    Laravel - Eloquent (Inserting and Saving Data)
                 </div>
 
                 <div class="links">
