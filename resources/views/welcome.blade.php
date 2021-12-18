@@ -60,7 +60,7 @@ body {
 
 </style>
        
-        <title>Laravel - Eloquent (Reading Data)</title>
+        <title>Laravel - Eloquent (Reading and Finding with Restraints)</title>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -80,7 +80,7 @@ body {
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel - Eloquent (Reading Data)
+                    Laravel - Eloquent (Reading and Finding with Restraints)
                 </div>
 
                 <div class="links">
