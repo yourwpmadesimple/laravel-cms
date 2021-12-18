@@ -83,3 +83,16 @@ Route::get('eloquent/find', function(){
 
     return $posts;
 });
+
+/*
+|--------------------------------------------------------------------------
+|ELOQUENT - READING / FINDING WITH RESTRAINTS
+|--------------------------------------------------------------------------
+*/
+
+Route::get('eloquent/findwhere', function() {
+    $posts = Post::where('id', 3)->orderBy('id', 'desc')->take(1)->get();
+    echo '<pre>';
+    echo json_encode(json_decode($posts), JSON_PRETTY_PRINT);
+    echo '</pre>';
+});
